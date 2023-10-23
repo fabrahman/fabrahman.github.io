@@ -4,3 +4,35 @@
 
 "PhysRev":
   url: https://journals.aps.org/
+
+"ACL":
+  url: 
+  color: "#c869bf"
+
+"arXiv":
+  url:
+  color: "#c869bf"
+
+"EMNLP":
+  url: 
+  color: "#c869bf"
+
+"NAACL":
+  url: 
+  color: "#c869bf"
+
+"TACL":
+  url: 
+  color: "#c869bf"
+
+"NeurIPS":
+  url: 
+  color: "#c869bf"
+
+"ICLR":
+  url: 
+  color: "#c869bf"
+
+"AAAI":
+  url: 
+  color: "#c869bf"
