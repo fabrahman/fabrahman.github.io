@@ -1,84 +1,424 @@
----
----
+@article{Brahman2023PlaSma,
+    author = {Faeze Brahman and Chandra Bhagavatula and Valentina Pyatkin* and Jena D. Hwang* and Xiang Lorraine Li and Hirona J. Arai and Soumya Sanyal and Keisuke Sakaguchi and Xiang Ren and Yejin Choi},
+    journal = {ArXiv preprint},
+    title = {PlaSma: Making Small Language Models Better Procedural Knowledge Models for (Counterfactual) Planning},
+    url = {https://arxiv.org/abs/2305.19472},
+    year = {2023},
+    bibtex_show = {true},
+    code = {https://github.com/allenai/PlaSma},
+    abbr= {arXiv},
+    abstract = "Procedural planning, which entails decomposing a high-level goal into a sequence of temporally ordered steps, is an important yet intricate task for machines. It involves integrating common-sense knowledge to reason about complex contextualized situations that are often counterfactual, e.g. 'scheduling a doctor's appointment without a phone'. While current approaches show encouraging results using large language models (LLMs), they are hindered by drawbacks such as costly API calls and reproducibility issues. In this paper, we advocate planning using smaller language models. We present PlaSma, a novel two-pronged approach to endow small language models with procedural knowledge and (counterfactual) planning capabilities. More concretely, we develop symbolic procedural knowledge distillation to enhance the implicit knowledge in small language models and an inference-time algorithm to facilitate more structured and accurate reasoning. In addition, we introduce a novel task, Counterfactual Planning, that requires a revision of a plan to cope with a counterfactual situation. In both the original and counterfactual setting, we show that orders-of-magnitude smaller models (770M-11B parameters) can compete and often surpass their larger teacher models' capabilities."
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@article{jung2023impossible,
+  title={Impossible Distillation: from Low-Quality Model to High-Quality Dataset \& Model for Summarization and Paraphrasing},
+  author={Jung, Jaehun and West, Peter and Jiang, Liwei and Brahman, Faeze and Lu, Ximing and Fisher, Jillian and Sorensen, Taylor and Choi, Yejin},
+  journal={arXiv preprint arXiv:2305.16635},
+  year={2023},
+  abbr={arXiv},
+  bibtex_show = {true},
+  code = {}
+
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
+@misc{chakrabarty2023creativity,
+      title={Creativity Support in the Age of Large Language Models: An Empirical Study Involving Emerging Writers}, 
+      author={Tuhin Chakrabarty* and Vishakh Padmakumar* and Faeze Brahman and Smaranda Muresan},
+      year={2023},
+      journal={arXiv preprint arXiv:2309.12570},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      abbr = {arXiv},
+      bibtex_show = {true}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{lu2023inference,
+  title={Inference-Time Policy Adapters (IPA): Tailoring Extreme-Scale LMs without Fine-tuning},
+  author={Lu, Ximing and Brahman, Faeze and West, Peter and Jang, Jaehun and Chandu, Khyathi and Ravichander, Abhilasha and Qin, Lianhui and Ammanabrolu, Prithviraj and Jiang, Liwei and Ramnath, Sahana and others},
+  booktitle = "Proceedings of EMNLP",
+  year = "2023",
+  publisher = "Association for Computational Linguistics",
+  year={2023},
+  abbr = {EMNLP},
+  bibtex_show = {true},
+  code = {https://github.com/GXimingLu/IPA},
+  abstract = "While extreme-scale language models have demonstrated exceptional performance on a variety of language tasks, the degree of control over these language models through pure prompting can often be limited. Directly fine-tuning such language models can be effective for tailoring them, but it can be either extremely costly (e.g., GPT-3) or not even feasible for the broader community (e.g., GPT-4). We propose Inference-time Policy Adapters (IPA), which efficiently tailors a language model such as GPT-3 without fine-tuning it. IPA guides a large base model during decoding time through a lightweight policy adapter trained to optimize an arbitrary user objective with reinforcement learning. On five challenging text generation tasks, such as toxicity reduction and lexically constrained generation, IPA consistently brings significant improvements over off-the-shelf language models. It outperforms competitive baseline methods, sometimes even including expensive fine-tuning. In particular, tailoring GPT-2 with IPA can outperform GPT-3, while tailoring GPT-3 with IPA brings a major performance boost over GPT-3 (and sometimes even over GPT-4). Our promising results highlight the potential of IPA as a lightweight alternative to tailoring extreme-scale language models."
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@inproceedings{rao2023moral,
+  title={What Makes it Ok to Set a Fire? Iterative Self-distillation of Contexts and Rationales for Disambiguating Defeasible Social and Moral Situations},
+  author={Kavel Rao and Liwei Jiang and Valentina Pyatkin and Yuling Gu and Niket Tandon and Nouha Dziri and Faeze Brahman and Yejin Choi},
+  booktitle = "Findings of EMNLP",
+  year = "2023",
+  publisher = "Association for Computational Linguistics",
+  year={2023},
+  abbr = {EMNLP},
+  bibtex_show = {true},
+  abstract = "Moral or ethical judgments rely heavily on the specific contexts in which they occur. Understanding varying shades of defeasible contextualizations (i.e., additional information that strengthens or attenuates the moral acceptability of an action) is critical to accurately represent the subtlety and intricacy of grounded human moral judgment in real-life scenarios. We introduce defeasible moral reasoning: a task to provide grounded contexts that make an action more or less morally acceptable, along with commonsense rationales that justify the reasoning. To elicit high-quality task data, we take an iterative self-distillation approach that starts from a small amount of unstructured seed knowledge from GPT-3 and then alternates between (1) self-distillation from student models; (2) targeted filtering with a critic model trained by human judgment (to boost validity) and NLI (to boost diversity); (3) self-imitation learning (to amplify the desired data quality). This process yields a student model that produces defeasible contexts with improved validity, diversity, and defeasibility. From this model we distill a high-quality dataset, δ-Rules-of-Thumb, of 1.2M entries of contextualizations and rationales for 115K defeasible moral actions rated highly by human annotators 85.9% to 99.8% of the time. Using δ-RoT we obtain a final student model that wins over all intermediate student models by a notable margin."
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@inproceedings{hallinan2023steer,
+  title={STEER: Unified Style Transfer with Expert Reinforcement},
+  author={Skyler Hallinan and Faeze Brahman and Ximing Lu and Jaehun Jung and Sean Welleck and Yejin Choi},
+  booktitle = "Findings of EMNLP",
+  month = dec,
+  year = "2023",
+  publisher = "Association for Computational Linguistics",
+  year={2023},
+  abbr = {EMNLP},
+  bibtex_show = true
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@inproceedings{huang2023,
+  title={Affective and Dynamic Beam Search for Story Generation },
+  author={Tenghao Huang and Ehsan Qasemi and Bangzheng Li and He Wang and Faeze Brahman and Muhao Chen and Snigdha Chaturved},
+  booktitle = "Findings of EMNLP",
+  month = dec,
+  year = "2023",
+  publisher = "Association for Computational Linguistics",
+  year={2023},
+  abbr = {EMNLP},
+  bibtex_show = true
+}
+
+@article{Lin2023SwiftSageAG,
+    author = {Bill Yuchen Lin and Yicheng Fu and Karina Yang and Prithviraj Ammanabrolu and Faeze Brahman and Shiyu Huang and Chandra Bhagavatula and Yejin Choi and Xiang Ren},
+    journal = {NeurIPS},
+    title = {SwiftSage: A Generative Agent with Fast and Slow Thinking for Complex Interactive Tasks},
+    url = {https://arxiv.org/abs/2305.17390},
+    volume = {abs/2305.17390},
+    year = {2023},
+    abbr={NeurIPS},
+    bibtex_show = {true},
+    code = {https://github.com/yuchenlin/SwiftSage},
+    abstract = "We introduce SwiftSage, a novel agent framework inspired by the dual-process theory of human cognition, designed to excel in action planning for complex interactive reasoning tasks. SwiftSage integrates the strengths of behavior cloning and prompting large language models (LLMs) to enhance task completion performance. The framework comprises two primary modules: the Swift module, representing fast and intuitive thinking, and the Sage module, emulating deliberate thought processes. The Swift module is a small encoder-decoder LM fine-tuned on the oracle agent's action trajectories, while the Sage module employs LLMs such as GPT-4 for subgoal planning and grounding. We develop a heuristic method to harmoniously integrate the two modules, resulting in a more efficient and robust problem-solving process. In 30 tasks from the ScienceWorld benchmark, SwiftSage significantly outperforms other methods such as SayCan, ReAct, and Reflexion, demonstrating its effectiveness in solving complex real-world tasks.",
+}
+
+@inproceedings{chen-etal-2023-rev,
+    title = "{REV}: Information-Theoretic Evaluation of Free-Text Rationales",
+    author = "Chen, Hanjie  and
+      Brahman, Faeze  and
+      Ren, Xiang  and
+      Ji, Yangfeng  and
+      Choi, Yejin  and
+      Swayamdipta, Swabha",
+    booktitle = "Proceedings of ACL",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.112",
+    doi = "10.18653/v1/2023.acl-long.112",
+    pages = "2007--2030",
+    abbr={ACL},
+    bibtex_show = {true},
+    abstract = "Generating free-text rationales is a promising step towards explainable NLP, yet evaluating such rationales remains a challenge. Existing metrics have mostly focused on measuring the association between the rationale and a given label. We argue that an ideal metric should focus on the new information uniquely provided in the rationale that is otherwise not provided in the input or the label. We investigate this research problem from an information-theoretic perspective using conditional V-information (Hewitt et al., 2021). More concretely, we propose a metric called REV (Rationale Evaluation with conditional V-information), to quantify the amount of new, label-relevant information in a rationale beyond the information already available in the input or the label. Experiments across four benchmarks with reasoning tasks, including chain-of-thought, demonstrate the effectiveness of REV in evaluating rationale-label pairs, compared to existing metrics. We further demonstrate REV is consistent with human judgments on rationale evaluations and provides more sensitive measurements of new information in free-text rationales. When used alongside traditional performance metrics, REV provides deeper insights into models{'} reasoning and prediction processes.",
+    code = {https://github.com/HanjieChen/REV}
+}
+
+@inproceedings{welleck2023generating,
+  title={Generating Sequences by Learning to Self-Correct},
+  author={Sean Welleck* and Ximing Lu* and Peter West+ and Faeze Brahman+ and Tianxiao Shen and Daniel Khashabi and Yejin Choi},
+  booktitle={The Eleventh International Conference on Learning Representations },
+  year={2023},
+  url={https://openreview.net/forum?id=hH36JeQZDaO},
+  bibtex_show = {true},
+  abbr={ICLR},
+  abstract = "Sequence generation applications require satisfying semantic constraints, such as ensuring that programs are correct, using certain keywords, or avoiding undesirable content. Language models, whether fine-tuned or prompted with few-shot demonstrations, frequently violate these constraints, and lack a mechanism to iteratively revise their outputs. Moreover, some powerful language models are of extreme scale or inaccessible, making it inefficient, if not infeasible, to update their parameters for task-specific adaptation. We present Self-Correction, an approach that decouples an imperfect base generator (an off-the-shelf language model or supervised sequence-to-sequence model) from a separate corrector that learns to iteratively correct imperfect generations. To train the corrector, we propose an online training procedure that can use either scalar or natural language feedback on intermediate imperfect generations. We show that  Self-Correction improves upon the base generator in three diverse generation tasks - mathematical program synthesis, lexically-constrained generation, and toxicity control - even when the corrector is much smaller than the base generator. "
+}
+
+
+@inproceedings{jung-etal-2022-maieutic,
+    title = "Maieutic Prompting: Logically Consistent Reasoning with Recursive Explanations",
+    author = "Jung, Jaehun  and
+      Qin, Lianhui  and
+      Welleck, Sean  and
+      Brahman, Faeze  and
+      Bhagavatula, Chandra  and
+      Le Bras, Ronan  and
+      Choi, Yejin",
+    booktitle = "Proceedings of EMNLP",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.82",
+    doi = "10.18653/v1/2022.emnlp-main.82",
+    pages = "1266--1279",
+    abbr={EMNLP},
+    bibtex_show = {true},
+    abstract = "Pre-trained language models (LMs) struggle with consistent reasoning; recently, prompting LMs to generate explanations that self-guide the inference has emerged as a promising direction to amend this. However, these approaches are fundamentally bounded by the correctness of explanations, which themselves are often noisy and inconsistent. In this work, we develop Maieutic Prompting, which aims to infer a correct answer to a question even from the unreliable generations of LM. Maieutic Prompting induces a tree of explanations abductively (e.g. X is true, because ...) and recursively, then frames the inference as a satisfiability problem over these explanations and their logical relations. We test Maieutic Prompting for true/false QA on three challenging benchmarks that require complex commonsense reasoning. Maieutic Prompting achieves up to 20{\%} better accuracy than state-of-the-art prompting methods, and as a fully unsupervised approach, performs competitively with supervised models. We also show that Maieutic Prompting improves robustness in inference while providing interpretable rationales.",
+    code = {https://github.com/jaehunjung1/Maieutic-Prompting}
+}
+
+@inproceedings{vijjini-etal-2022-towards,
+    title = "Towards Inter-character Relationship-driven Story Generation",
+    author = "Vijjini, Anvesh Rao  and
+      Brahman, Faeze  and
+      Chaturvedi, Snigdha",
+    booktitle = "Proceedings of EMNLP",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.613",
+    doi = "10.18653/v1/2022.emnlp-main.613",
+    pages = "8970--8987",
+    abbr={EMNLP},
+    bibtex_show = {true},
+    abstract = "In this paper, we introduce the task of modeling interpersonal relationships for story generation. For addressing this task, we propose Relationships as Latent Variables for Story Generation, (ReLiSt). ReLiSt generates stories sentence by sentence and has two major components - a relationship selector and a story continuer. The relationship selector specifies a latent variable to pick the relationship to exhibit in the next sentence and the story continuer generates the next sentence while expressing the selected relationship in a coherent way. Our automatic and human evaluations demonstrate that ReLiSt is able to generate stories with relationships that are more faithful to desired relationships while maintaining the content quality. The relationship assignments to sentences during inference brings interpretability to ReLiSt.",
+}
+
+
+@proceedings{wnu-2022-narrative,
+    title = "Proceedings of the 4th Workshop of Narrative Understanding (WNU2022)",
+    editor = "Clark, Elizabeth  and
+      Brahman, Faeze  and
+      Iyyer, Mohit",
+    month = jul,
+    year = "2022",
+    address = "Seattle, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.wnu-1.0",
+    abbr={NAACL},
+    bibtex_show = {true}
+}
+
+
+@inproceedings{zhao-etal-2022-revisiting,
+    title = "Revisiting Generative Commonsense Reasoning: A Pre-Ordering Approach",
+    author = "Zhao, Chao  and
+      Brahman, Faeze  and
+      Huang, Tenghao  and
+      Chaturvedi, Snigdha",
+    booktitle = "Findings of NAACL",
+    month = jul,
+    year = "2022",
+    address = "Seattle, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-naacl.129",
+    doi = "10.18653/v1/2022.findings-naacl.129",
+    pages = "1709--1718",
+    abbr={NAACL},
+    bibtex_show = {true},
+    abstract = "Pre-trained models (PTMs) have lead to great improvements in natural language generation (NLG). However, it is still unclear how much commonsense knowledge they possess. With the goal of evaluating commonsense knowledge of NLG models, recent work has proposed the problem of generative commonsense reasoning, e.g., to compose a logical sentence given a set of unordered concepts. Existing approaches to this problem hypothesize that PTMs lack sufficient parametric knowledge for this task, which can be overcome by introducing external knowledge or task-specific pre-training objectives. Different from this trend, we argue that PTM{'}s inherent ability for generative commonsense reasoning is underestimated due to the order-agnostic property of its input. In particular, we hypothesize that the order of the input concepts can affect the PTM{'}s ability to utilize its commonsense knowledge. To this end, we propose a pre-ordering approach to elaborately manipulate the order of the given concepts before generation. Experiments show that our approach can outperform the more sophisticated models that have access to a lot of external data and resources.",
+}
+
+
+@inproceedings{zhao-etal-2022-narrasum,
+    title = "{N}arra{S}um: A Large-Scale Dataset for Abstractive Narrative Summarization",
+    author = "Zhao, Chao  and
+      Brahman, Faeze  and
+      Song, Kaiqiang  and
+      Yao, Wenlin  and
+      Yu, Dian  and
+      Chaturvedi, Snigdha",
+    booktitle = "Findings of EMNLP",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-emnlp.14",
+    doi = "10.18653/v1/2022.findings-emnlp.14",
+    pages = "182--197",
+    abbr={EMNLP},
+    bibtex_show = {true},
+    abstract = "Narrative summarization aims to produce a distilled version of a narrative to describe its most salient events and characters. Writing a summary for a narrative is challenging as it requires an understanding of event causality and character behaviors. To encourage research in this direction, we propose NarraSum, a large-scale narrative summarization dataset. It contains 122K narratives, which are collected from the synopses of movies and TV episodes with diverse genres, and their corresponding abstractive summaries. Experiments show that there is a large performance gap between humans and the state-of-the-art summarization models on NarraSum. We hope that this dataset will promote future research in summarization, as well as broader studies of natural language understanding and generation.",
+    data = {https://github.com/zhaochaocs/narrasum}
+  
+}
+
+@inproceedings{brahman-etal-2022-grounded,
+    title = "Grounded Keys-to-Text Generation: Towards Factual Open-Ended Generation",
+    author = "Brahman, Faeze  and
+      Peng, Baolin  and
+      Galley, Michel  and
+      Rao, Sudha  and
+      Dolan, Bill  and
+      Chaturvedi, Snigdha  and
+      Gao, Jianfeng",
+    booktitle = "Findings of EMNLP",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-emnlp.547",
+    doi = "10.18653/v1/2022.findings-emnlp.547",
+    pages = "7397--7413",
+    abbr={EMNLP},
+    bibtex_show = {true},
+    abstract = "Large pre-trained language models have recently enabled open-ended generation frameworks (e.g., prompt-to-text NLG) to tackle a variety of tasks going beyond the traditional data-to-text generation. While this framework is more general, it is under-specified and often leads to a lack of controllability restricting their real-world usage. We propose a new grounded keys-to-text generation task: the task is to generate a factual description about an entity given a set of guiding keys, and grounding passages. To address this task, we introduce a new dataset, called EntDeGen. Inspired by recent QA-based evaluation measures, we propose an automatic metric, MAFE, for factual correctness of generated descriptions. Our EntDescriptor model is equipped with strong rankers to fetch helpful passages and generate entity descriptions. Experimental result shows a good correlation (60.14) between our proposed metric and human judgments of factuality. Our rankers significantly improved the factual correctness of generated descriptions (15.95{\%} and 34.51{\%} relative gains in recall and precision). Finally, our ablation study highlights the benefit of combining keys and groundings.",
+    data = {https://github.com/fabrahman/Grounded_Keys2Text}
+}
+
+@proceedings{nuse-2021-narrative,
+    title = "Proceedings of the Third Workshop on Narrative Understanding",
+    editor = "Akoury, Nader  and
+      Brahman, Faeze  and
+      Chaturvedi, Snigdha  and
+      Clark, Elizabeth  and
+      Iyyer, Mohit  and
+      Martin, Lara J.",
+    month = jun,
+    year = "2021",
+    address = "Virtual",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.nuse-1.0",
+    abbr={NAACL},
+    bibtex_show = {true}
+}
+
+@article{khashabi-etal-2021-parsinlu,
+    title = "{P}arsi{NLU}: A Suite of Language Understanding Challenges for {P}ersian",
+    author = "Khashabi, Daniel  and
+      Cohan, Arman  and
+      Shakeri, Siamak  and
+      Hosseini, Pedram  and
+      Pezeshkpour, Pouya  and
+      Alikhani, Malihe  and
+      Aminnaseri, Moin  and
+      Bitaab, Marzieh  and
+      Brahman, Faeze  and
+      Ghazarian, Sarik  and
+      Gheini, Mozhdeh  and
+      Kabiri, Arman  and
+      Mahabagdi, Rabeeh Karimi  and
+      Memarrast, Omid  and
+      Mosallanezhad, Ahmadreza  and
+      Noury, Erfan  and
+      Raji, Shahab  and
+      Rasooli, Mohammad Sadegh  and
+      Sadeghi, Sepideh  and
+      Azer, Erfan Sadeqi  and
+      Samghabadi, Niloofar Safi  and
+      Shafaei, Mahsa  and
+      Sheybani, Saber  and
+      Tazarv, Ali  and
+      Yaghoobzadeh, Yadollah",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "9",
+    year = "2021",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/2021.tacl-1.68",
+    doi = "10.1162/tacl_a_00419",
+    pages = "1147--1162",
+    abbr={TACL},
+    bibtex_show = {true},
+    abstract = "Despite the progress made in recent years in addressing natural language understanding (NLU) challenges, the majority of this progress remains to be concentrated on resource-rich languages like English. This work focuses on Persian language, one of the widely spoken languages in the world, and yet there are few NLU datasets available for this language. The availability of high-quality evaluation datasets is a necessity for reliable assessment of the progress on different NLU tasks and domains. We introduce ParsiNLU, the first benchmark in Persian language that includes a range of language understanding tasks{---}reading comprehension, textual entailment, and so on. These datasets are collected in a multitude of ways, often involving manual annotations by native speakers. This results in over 14.5k new instances across 6 distinct NLU tasks. Additionally, we present the first results on state-of-the-art monolingual and multilingual pre-trained language models on this benchmark and compare them with human performance, which provides valuable insights into our ability to tackle natural language understanding challenges in Persian. We hope ParsiNLU fosters further research and advances in Persian language understanding.1",
+}
+
+@inproceedings{brahman-etal-2021-characters-tell,
+    title = "{``}Let Your Characters Tell Their Story{''}: A Dataset for Character-Centric Narrative Understanding",
+    author = "Brahman, Faeze  and
+      Huang, Meng  and
+      Tafjord, Oyvind  and
+      Zhao, Chao  and
+      Sachan, Mrinmaya  and
+      Chaturvedi, Snigdha",
+    booktitle = "Findings of EMNLP",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-emnlp.150",
+    doi = "10.18653/v1/2021.findings-emnlp.150",
+    pages = "1734--1752",
+    abbr={EMNLP},
+    bibtex_show = {true},
+    abstract = "When reading a literary piece, readers often make inferences about various characters{'} roles, personalities, relationships, intents, actions, etc. While humans can readily draw upon their past experiences to build such a character-centric view of the narrative, understanding characters in narratives can be a challenging task for machines. To encourage research in this field of character-centric narrative understanding, we present LiSCU {--} a new dataset of literary pieces and their summaries paired with descriptions of characters that appear in them. We also introduce two new tasks on LiSCU: Character Identification and Character Description Generation. Our experiments with several pre-trained language models adapted for these tasks demonstrate that there is a need for better models of narrative comprehension.",
+    data = {https://users.soe.ucsc.edu/~hannahbrahman/dataset/liscu.html}
+}
+
+@inproceedings{huang-etal-2021-uncovering-implicit,
+    title = "Uncovering Implicit Gender Bias in Narratives through Commonsense Inference",
+    author = "Huang, Tenghao  and
+      Brahman, Faeze  and
+      Shwartz, Vered  and
+      Chaturvedi, Snigdha",
+    booktitle = "Findings of EMNLP",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-emnlp.326",
+    doi = "10.18653/v1/2021.findings-emnlp.326",
+    pages = "3866--3873",
+    abbr={EMNLP},
+    bibtex_show = {true},
+    abstract = "Pre-trained language models learn socially harmful biases from their training corpora, and may repeat these biases when used for generation. We study gender biases associated with the protagonist in model-generated stories. Such biases may be expressed either explicitly ({``}women can{'}t park{''}) or implicitly (e.g. an unsolicited male character guides her into a parking space). We focus on implicit biases, and use a commonsense reasoning engine to uncover them. Specifically, we infer and analyze the protagonist{'}s motivations, attributes, mental states, and implications on others. Our findings regarding implicit biases are in line with prior work that studied explicit biases, for example showing that female characters{'} portrayal is centered around appearance, while male figures{'} focus on intellect.",
+}
+
+@inproceedings{basu-roy-chowdhury-etal-2021-everything,
+    title = "Is Everything in Order? A Simple Way to Order Sentences",
+    author = "Basu Roy Chowdhury, Somnath  and
+      Brahman, Faeze  and
+      Chaturvedi, Snigdha",
+    booktitle = "Proceedings of EMNLP",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.841",
+    doi = "10.18653/v1/2021.emnlp-main.841",
+    pages = "10769--10779",
+    abbr={EMNLP},
+    bibtex_show = {true},
+    abstract = "The task of organizing a shuffled set of sentences into a coherent text has been used to evaluate a machine{'}s understanding of causal and temporal relations. We formulate the sentence ordering task as a conditional text-to-marker generation problem. We present Reorder-BART (Re-BART) that leverages a pre-trained Transformer-based model to identify a coherent order for a given set of shuffled sentences. The model takes a set of shuffled sentences with sentence-specific markers as input and generates a sequence of position markers of the sentences in the ordered text. Re-BART achieves the state-of-the-art performance across 7 datasets in Perfect Match Ratio (PMR) and Kendall{'}s tau. We perform evaluations in a zero-shot setting, showcasing that our model is able to generalize well across other datasets. We additionally perform several experiments to understand the functioning and limitations of our framework.",
+    code = {https://github.com/fabrahman/ReBART},
+    poster = {https://www.cs.unc.edu/~somnath/files/ReBART-Poster.pdf}
+}
+
+@inproceedings{brahman2021learning,
+  title={Learning to rationalize for nonmonotonic reasoning with distant supervision},
+  author={Brahman, Faeze and Shwartz, Vered and Rudinger, Rachel and Choi, Yejin},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={35},
+  number={14},
+  pages={12592--12601},
+  year={2021},
+  abbr={AAAI},
+  bibtex_show = {true},
+  abstract = "The black-box nature of neural models has motivated a line of research that aims to generate natural language rationales to explain why a model made certain predictions. Such rationale generation models, to date, have been trained on dataset-specific crowdsourced rationales, but this approach is costly and is not generalizable to new tasks and domains. In this paper, we investigate the extent to which neural models can reason about natural language rationales that explain model predictions, relying only on distant supervision with no additional annotation cost for human-written rationales. We investigate multiple ways to automatically generate rationales using pre-trained language models, neural knowledge models, and distant supervision from related tasks, and train generative models capable of composing explanatory rationales for unseen instances. We demonstrate our approach on the defeasible inference task, a nonmonotonic reasoning task in which an inference may be strengthened or weakened when new information (an update) is introduced. Our model shows promises at generating post-hoc rationales explaining why an inference is more or less likely given the additional information, however, it mostly generates trivial rationales reflecting the fundamental limitations of neural language models. Conversely, the more realistic setup of jointly predicting the update or its type and generating rationale is more challenging, suggesting an important future direction.",
+  code= {https://github.com/fabrahman/RationaleGen},
+  slides = {http://alumni.soe.ucsc.edu/~hannahbrahman/AAAI2021_slides.pdf}
+
+}
+
+
+
+@inproceedings{brahman-etal-2020-cue,
+    title = "Cue Me In: Content-Inducing Approaches to Interactive Story Generation",
+    author = "Brahman, Faeze  and
+      Petrusca, Alexandru  and
+      Chaturvedi, Snigdha",
+    booktitle = "Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing",
+    month = dec,
+    year = "2020",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.aacl-main.59",
+    pages = "588--597",
+    abstract = "Automatically generating stories is a challenging problem that requires producing causally related and logical sequences of events about a topic. Previous approaches in this domain have focused largely on one-shot generation, where a language model outputs a complete story based on limited initial input from a user. Here, we instead focus on the task of interactive story generation, where the user provides the model mid-level sentence abstractions in the form of cue phrases during the generation process. This provides an interface for human users to guide the story generation. We present two content-inducing approaches to effectively incorporate this additional information. Experimental results from both automatic and human evaluations show that these methods produce more topically coherent and personalized stories compared to baseline methods.",
+}
+
+
+@inproceedings{brahman-chaturvedi-2020-modeling,
+    title = "Modeling Protagonist Emotions for Emotion-Aware Storytelling",
+    author = "Brahman, Faeze  and
+      Chaturvedi, Snigdha",
+    booktitle = "Proceedings of EMNLP",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.426",
+    doi = "10.18653/v1/2020.emnlp-main.426",
+    pages = "5277--5294",
+    bibtex_show = {true},
+    abbr = {EMNLP},
+    abstract = "Emotions and their evolution play a central role in creating a captivating story. In this paper, we present the first study on modeling the emotional trajectory of the protagonist in neural storytelling. We design methods that generate stories that adhere to given story titles and desired emotion arcs for the protagonist. Our models include Emotion Supervision (EmoSup) and two Emotion-Reinforced (EmoRL) models. The EmoRL models use special rewards designed to regularize the story generation process through reinforcement learning. Our automatic and manual evaluations demonstrate that these models are significantly better at generating stories that follow the desired emotion arcs compared to baseline methods, without sacrificing story quality.",
+    code = {https://github.com/fabrahman/Emo-Aware-Storytelling},
+    slides = {http://alumni.soe.ucsc.edu/~hannahbrahman/EMNLP_slides.pdf}
 }
