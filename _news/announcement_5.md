@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Senior Area Chair NAACL 2024.
+I'm honored to serve as a Senior Area Chair for [NAACL 2024](https://2024.naacl.org/)!
