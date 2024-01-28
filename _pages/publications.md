@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: publications by categories in reversed chronological order.
+description: publications by categories in reversed chronological order. <br> * and + denotes co-first and co-second authors.
 nav: true
 nav_order: 1
 ---
