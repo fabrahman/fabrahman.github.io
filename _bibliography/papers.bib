@@ -41,10 +41,11 @@
       abstract = "Language Models (LMs) achieve substantial language capabilities when finetuned using Reinforcement Learning with Human Feedback (RLHF). However, RLHF is an unstable and data-hungry process that continually requires new high-quality LM-generated data for finetuning. We introduce Advantage-Leftover Lunch RL (A-LoL), a new class of offline policy gradient algorithms that enable RL training on any pre-existing data. By assuming the entire LM output sequence as a single action, A-LoL allows incorporating sequence-level classifiers or human-designed scoring functions as rewards. Subsequently, by using LM's internal sequence-level value estimate, A-LoL filters negative advantage (low-quality) data points during training, making it resilient to noise. Overall, A-LoL is an easy-to-implement LM training recipe that is sample-efficient and stable. We demonstrate the effectiveness of A-LoL and its variants with a set of four different language generation tasks. We compare against both online RL (PPO) and recent preference-based (DPO, PRO) and reward-based (GOLD) offline RL baselines. On the commonly-used RLHF benchmark, Helpful and Harmless Assistant (HHA), LMs trained with A-LoL methods achieve the highest diversity while also being rated more safe and helpful than baselines according to humans. Additionally, in the remaining three tasks, A-LoL could optimize multiple distinct reward functions even when using noisy or suboptimal training data. We also release our experimental code."
 }
 
-@misc{tian2023macgyver,
+@inproceedings{tian2023macgyver,
       title={MacGyver: Are Large Language Models Creative Problem Solvers?}, 
       author={Yufei Tian and Abhilasha Ravichander and Lianhui Qin and Ronan Le Bras and Raja Marjieh and Nanyun Peng and Yejin Choi and Thomas L. Griffiths and  Faeze Brahman},
       year={2024},
+      booktitle = "Proceedings of NAACL",
       eprint={2311.09682},
       url = {https://arxiv.org/abs/2311.09682},
       archivePrefix={arXiv},
@@ -54,17 +55,41 @@
       abstract = "We explore the creative problem-solving capabilities of modern large language models (LLMs) in a constrained setting. The setting requires circumventing a cognitive bias known in psychology as ''functional fixedness'' to use familiar objects in innovative or unconventional ways. To this end, we create MacGyver, an automatically generated dataset consisting of 1,600 real-world problems that deliberately trigger functional fixedness and require thinking 'out-of-the-box'. We then present our collection of problems to both LLMs and humans to compare and contrast their problem-solving abilities. We show that MacGyver is challenging for both groups, but in unique and complementary ways. For example, humans typically excel in solving problems that they are familiar with but may struggle with tasks requiring domain-specific knowledge, leading to a higher variance. On the other hand, LLMs, being exposed to a variety of highly specialized knowledge, attempt broader problems but are prone to overconfidence and propose actions that are physically infeasible or inefficient. We also provide a detailed error analysis of LLMs, and demonstrate the potential of enhancing their problem-solving ability with novel prompting techniques such as iterative step-wise reflection and divergent-convergent thinking. This work provides insight into the creative problem-solving capabilities of humans and AI and illustrates how psychological paradigms can be extended into large-scale tasks for comparing humans and machines."
 }
 
-@article{jung2023impossible,
+@inproceedings{jung2023impossible,
   title={Impossible Distillation: from Low-Quality Model to High-Quality Dataset \& Model for Summarization and Paraphrasing},
   author={Jung, Jaehun and West, Peter and Jiang, Liwei and Brahman, Faeze and Lu, Ximing and Fisher, Jillian and Sorensen, Taylor and Choi, Yejin},
   journal={arXiv preprint arXiv:2305.16635},
   url={},
   year={2024},
+  booktitle = "Proceedings of NAACL",
   abbr={NAACL},
   bibtex_show = {true},
   code = {}
 
 }
+
+@misc{zhao2023uncommonsense,
+      title={UNcommonsense Reasoning: Abductive Reasoning about Uncommon Situations}, 
+      author={Wenting Zhao and Justin T Chiu and Jena D. Hwang and Faeze Brahman and Jack Hessel and Sanjiban Choudhury and Yejin Choi and Xiang Lorraine Li and Alane Suhr},
+      year={2024},
+      booktitle = "Proceedings of NAACL",
+      abbr={NAACL},
+      eprint={2311.08469},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      bibtex_show = {true},
+}
+
+
+@misc{yin2024agent,
+      title={Agent Lumos: Unified and Modular Training for Open-Source Language Agents}, 
+      author={Da Yin and Faeze Brahman and Abhilasha Ravichander and Khyathi Chandu and Kai-Wei Chang and Yejin Choi and Bill Yuchen Lin},
+      year={2024},
+      eprint={2311.05657},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+
 
 @misc{chakrabarty2023creativity,
       title={Creativity Support in the Age of Large Language Models: An Empirical Study Involving Emerging Writers}, 
