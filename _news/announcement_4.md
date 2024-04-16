@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our workshop on Narrative Understanding is accepted to ACL 2024!
+Our workshop on Narrative Understanding is accepted to EMNLP 2024!
