@@ -172,7 +172,13 @@
             <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
           {%- endif %}
           {%- if entry.data %}
-            <a href="{{ entry.data }}" class="btn btn-sm z-depth-0" role="button">Code & Data</a>
+            <a href="{{ entry.data }}" class="btn btn-sm z-depth-0" role="button">Code/Data</a>
+          {%- endif %}
+          {%- if entry.website %}
+            <a href="{{ entry.data }}" class="btn btn-sm z-depth-0" role="button">Webpage</a>
+          {%- endif %}
+          {%- if entry.press %}
+            <a href="{{ entry.data }}" class="btn btn-sm z-depth-0" role="button">Press</a>
           {%- endif %}
           {%- if entry.poster %}
             {% if entry.poster contains '://' -%}
