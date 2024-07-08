@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-New papers on [WildTeaming at Scale](https://arxiv.org/pdf/2406.18510) and [WildBench](https://arxiv.org/pdf/2406.04770) 🦁!
+New paper on [Contextual Noncompliance](https://nbviewer.org/github/allenai/noncompliance/blob/main/paper.pdf) 🥥!
