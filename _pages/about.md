@@ -18,8 +18,13 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 I am a post-doctoral researcher at [Allen Institute for AI](https://allenai.org/) and the [Paul G. Allen School of Computer Science & Engineering](https://www.cs.washington.edu/) at the University of Washington working with [Yejin Choi](https://homes.cs.washington.edu/~yejin/). Prior to this, I did my Ph.D. (2022) in Computer Science at the University of California, Santa Cruz, working with [Snigdha Chaturvedi](https://sites.google.com/site/snigdhac/). I hold a master degree (2018) in Computer Science and a master (2014) and bachelor (2012) degree in Electrical Engineering.
- 
-I am broadly interested in natural language understanding and generation with the long-term goal of instilling human-like communication, commonsense knowledge, and reasoning capabilities in machines. My current research interests include (controllable) text generation, (social) commonsense reasoning, and unsupervised learning.
+
+I am broadly interested in understanding language model's capabilities and limitations in reasoning tasks and developing algorithm to address these limitations. More recently, I started caring about building AI models that are more safe, reliable and efficient.
+<!-- Below are several themes I am interested in: -->
+
+
+
+<!-- I am broadly interested in natural language understanding and generation with the long-term goal of instilling human-like communication, and reasoning capabilities in machines. My current research interests include (controllable) text generation, (social) commonsense reasoning, and unsupervised learning. -->
 
 Previously, I interned at Microsoft Research, working on controllable grounded text generation; and at AI2, working on unsupervised rationale generation for non-monotonic reasoning.
 
