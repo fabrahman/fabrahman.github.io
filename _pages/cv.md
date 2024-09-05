@@ -4,7 +4,7 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 4
-cv_pdf: Faeze_long_CV_April.pdf
+cv_pdf: FaezeBrahman_CV_sept.pdf
 description: 
 toc:
   sidebar: left
