@@ -10,13 +10,29 @@ profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
   - align: left
+    image: keivan.png
+    content: #about_einstein.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <strong>Keivan Rezaei (PhD, UMD)</strong>
+      <p>Co-mentor: Abhilasha Ravichander </p>
+      <p>06/2024-</p>
+  - align: left
+    image: xuhuizhou-1400.webp
+    content: #about_einstein.md
+    image_circular: false # crops the image to make it circular
+    more_info: >
+      <strong>Xuhui Zhou (PhD, CMU)</strong>
+      <p>Co-mentor: Maarten Sap, Hyunwoo Kim</p>
+      <p>06/2024-10/2024</p>
+  - align: left
     image: yufei_pic.jpg
     content: #about_einstein.md
     image_circular: false # crops the image to make it circular
     more_info: >
       <strong>Yufei Tian (PhD, UCLA)</strong>
       <p>Co-mentor: Ronan Le Bras</p>
-      <p>05/2023-</p>
+      <p>05/2023-12/2023</p>
   - align: left
     image: da.jpeg
     content: #about_einstein.md
