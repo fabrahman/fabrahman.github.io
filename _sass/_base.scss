@@ -1058,3 +1058,55 @@ nav[data-toggle="toc"] {
     padding-top: 0.5rem;
   }
 }
+
+// Add this to _sass/_base.scss or create a new file _sass/_news.scss and import it in assets/css/main.scss
+
+// .news {
+//   .table-responsive {
+//     &.scrollable {
+//       max-height: 60vh !important;
+//       overflow-y: auto !important;
+//       display: block;
+//       -webkit-overflow-scrolling: touch;
+//     }
+//   }
+// }
+
+// News section styles
+.news-section {
+  margin-bottom: 2rem;
+  
+  .table-responsive {
+    border: none;
+    margin-bottom: 0;
+    
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 4px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+}
+
+.news {
+  .table-responsive {
+    max-height: 50vh !important;
+    overflow-y: auto !important;
+    
+    table {
+      margin-bottom: 0;
+    }
+  }
+}
