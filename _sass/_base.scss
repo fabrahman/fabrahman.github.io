@@ -1111,3 +1111,34 @@ nav[data-toggle="toc"] {
     }
   }
 }
+
+// Increase overall container width
+.container {
+  max-width: 1400px; // Adjust this value as needed
+}
+
+// Increase publications width
+.publications {
+  max-width: 100%;
+  
+  ol.bibliography {
+    max-width: 100%;
+    
+    li {
+      max-width: 100%;
+      
+      .preview {
+        max-width: 300px; // Increase preview image size if desired
+      }
+    }
+  }
+}
+
+// Adjust content width constraints
+.post-content {
+  max-width: 100%;
+}
+
+figure, img {
+  max-width: 100%; // Change from 90vw
+}
