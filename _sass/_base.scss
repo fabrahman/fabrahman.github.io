@@ -1114,7 +1114,7 @@ nav[data-toggle="toc"] {
 
 // Increase overall container width
 .container {
-  max-width: 1400px; // Adjust this value as needed
+  max-width: 1800px; // Adjust this value as needed
 }
 
 // Increase publications width
@@ -1141,4 +1141,21 @@ nav[data-toggle="toc"] {
 
 figure, img {
   max-width: 100%; // Change from 90vw
+}
+
+.publications {
+  ol.bibliography {
+    li {
+      .author {
+        width: 100%;
+        max-width: 100%;
+        display: inline-block;
+        
+        a {
+          display: inline; // Ensures links flow naturally
+          white-space: normal; // Allows proper line breaks
+        }
+      }
+    }
+  }
 }
