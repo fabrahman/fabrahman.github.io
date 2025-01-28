@@ -1119,13 +1119,13 @@ nav[data-toggle="toc"] {
 
 // Increase publications width
 .publications {
-  max-width: 100%;
+  max-width: 80%;
   
   ol.bibliography {
-    max-width: 100%;
+    max-width: 80%;
     
     li {
-      max-width: 100%;
+      max-width: 80%;
       
       .preview {
         max-width: 300px; // Increase preview image size if desired
