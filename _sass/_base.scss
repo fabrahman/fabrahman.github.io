@@ -1059,103 +1059,54 @@ nav[data-toggle="toc"] {
   }
 }
 
-// // Add this to _sass/_base.scss or create a new file _sass/_news.scss and import it in assets/css/main.scss
-
-// // .news {
-// //   .table-responsive {
-// //     &.scrollable {
-// //       max-height: 60vh !important;
-// //       overflow-y: auto !important;
-// //       display: block;
-// //       -webkit-overflow-scrolling: touch;
-// //     }
-// //   }
-// // }
-
-// // News section styles
-// .news-section {
-//   margin-bottom: 2rem;
-//   font-size: 0.6rem;
-  
-//   .table-responsive {
-//     border: none;
-//     margin-bottom: 0;
-    
-//     &::-webkit-scrollbar {
-//       width: 7px;
-//     }
-    
-//     &::-webkit-scrollbar-track {
-//       background: #e3e3e3;
-//       border-radius: 4px;
-//     }
-    
-//     &::-webkit-scrollbar-thumb {
-//       background: #888;
-//       border-radius: 4px;
-//     }
-    
-//     &::-webkit-scrollbar-thumb:hover {
-//       background: #555;
-//     }
-//   }
-// }
+// Add this to _sass/_base.scss or create a new file _sass/_news.scss and import it in assets/css/main.scss
 
 // .news {
 //   .table-responsive {
-//     max-height: 50vh !important;
-//     overflow-y: auto !important;
-    
-//     table {
-//       margin-bottom: 0;
+//     &.scrollable {
+//       max-height: 60vh !important;
+//       overflow-y: auto !important;
+//       display: block;
+//       -webkit-overflow-scrolling: touch;
 //     }
 //   }
 // }
 
-// // Increase overall container width
-// .container {
-//   max-width: 1450px; // Adjust this value as needed
-// }
-
-// // Increase publications width
-// .publications {
-//   max-width: 80%;
+// News section styles
+.news-section {
+  margin-bottom: 2rem;
   
-//   ol.bibliography {
-//     max-width: 80%;
+  .table-responsive {
+    border: none;
+    margin-bottom: 0;
     
-//     li {
-//       max-width: 80%;
-      
-//       .preview {
-//         max-width: 300px; // Increase preview image size if desired
-//       }
-//     }
-//   }
-// }
+    &::-webkit-scrollbar {
+      width: 7px;
+    }
+    
+    &::-webkit-scrollbar-track {
+      background: #e3e3e3;
+      border-radius: 4px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+}
 
-// // Adjust content width constraints
-// .post-content {
-//   max-width: 100%;
-// }
-
-// figure, img {
-//   max-width: 100%; // Change from 90vw
-// }
-
-// .publications {
-//   ol.bibliography {
-//     li {
-//       .author {
-//         width: 90%;
-//         max-width: 100%;
-//         display: inline-block;
-        
-//         a {
-//           display: inline; // Ensures links flow naturally
-//           white-space: normal; // Allows proper line breaks
-//         }
-//       }
-//     }
-//   }
-// }
+.news {
+  .table-responsive {
+    max-height: 50vh !important;
+    overflow-y: auto !important;
+    
+    table {
+      margin-bottom: 0;
+    }
+  }
+}
