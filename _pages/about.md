@@ -19,7 +19,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 I am a post-doctoral researcher at [Allen Institute for AI](https://allenai.org/) and the [Paul G. Allen School of Computer Science & Engineering](https://www.cs.washington.edu/) at the [University of Washington](https://www.cs.washington.edu/) working with [Yejin Choi](https://homes.cs.washington.edu/~yejin/). Prior to this, I did my Ph.D. (2022) in Computer Science at the University of California, Santa Cruz, working with [Snigdha Chaturvedi](https://sites.google.com/site/snigdhac/). I hold a master degree (2018) in Computer Science and a master (2014) and bachelor (2012) degree in Electrical Engineering. I have a broad set of research interests:
 
-- **Understanding language model's capabilities and limitations** in **reasoning** tasks and **developing efficient algorithms** to address these limitations beyond just scaling. (This also includes better collaborative strategies and HCI interfaces to combine the best of Human and AI abilities.)
+- **Understanding language model's capabilities and limitations** in the wild under **unseen or changing situations** and **developing efficient algorithms** to address these limitations beyond just scaling. (This also includes better design for collaborative strategies and HCI interfaces to combine the best of Human and AI abilities.)
 - Building **Human-centered** AI system that are more **reliable and safe** to use in various contexts by better **alignment techniques**.
 - Developing robust and meaningful **evaluation frameworks** to investigate the **emergent bahaviors of LLMs** that are challenging to measure.
 
