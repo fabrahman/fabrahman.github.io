@@ -177,10 +177,7 @@
           {%- endif %}
           {%- if entry.playground %}
             <a href="{{ entry.playground }}" class="btn btn-sm z-depth-0" role="button">Playground</a>
-          {%- endif %}
-          {%- if entry.nomination %}
-          <span style="color: red; font-weight: bold;">{{ entry.nomination }}</span>
-          {%- endif %}        
+          {%- endif %}      
           {%- if entry.press %}
             <a href="{{ entry.press }}" class="btn btn-sm z-depth-0" role="button">Press</a>
           {%- endif %}
@@ -204,6 +201,9 @@
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
+          {%- if entry.nomination %}
+          <span style="color: red; font-weight: bold;">{{ entry.nomination }}</span>
+          {%- endif %}  
           </div>
           {% if site.enable_publication_badges %}
           {% assign entry_has_altmetric_badge = entry.altmetric or entry.doi or  entry.eprint or entry.pmid or entry.isbn %}
