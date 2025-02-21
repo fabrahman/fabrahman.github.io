@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎤 Invited talk at UCLA NLP Seminar Series.
+🎤 Invited talk at [UCLA NLP Seminar Series](https://uclanlp.github.io/nlp-seminar/).
