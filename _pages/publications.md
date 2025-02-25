@@ -10,7 +10,7 @@ nav_order: 1
 <!-- _pages/publications.md -->
 Also see [Google Scholar](https://scholar.google.com/citations?user=viCG2ikAAAAJ&hl) and [Semantic Scholar](https://www.semanticscholar.org/author/Faeze-Brahman/9252833)
 
-* and + denote co-first and co-second authors.
+`*` and + denote co-first and co-second authors.
 
 <div class="publications">
 
