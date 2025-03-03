@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🎤 Invited talk at [UCLA NLP Seminar Series](https://uclanlp.github.io/nlp-seminar/). [\[slides\]]({{ site.baseurl }}/assets/pdf/balancing_compliance_reliability_pdf.pdf)
+🎤 Invited talk at [UCLA NLP Seminar Series](https://uclanlp.github.io/nlp-seminar/). [\[slides\]](https://drive.google.com/file/d/1pMJO6zdbNF95ZGtXpyW2ASuvJth2DZmu/view)
