@@ -1,6 +1,15 @@
-.slides-link {
-    text-decoration: underline;
-    color: #0c7430; // DodgerBlue or any color
-    font-weight: bold;
-    font-family: "Georgia", serif; // or any preferred font
-  }
+// .slides-link {
+//     text-decoration: underline;
+//     color: #0c7430; // DodgerBlue or any color
+//     font-weight: bold;
+//     font-family: "Georgia", serif; // or any preferred font
+//   }
+
+/* Custom slides link style */
+a.slides-link,
+a.slides-link:visited {
+  color: #b85310 !important;
+  font-weight: bold;
+  text-decoration: underline;
+  font-family: "Georgia", serif;
+}
