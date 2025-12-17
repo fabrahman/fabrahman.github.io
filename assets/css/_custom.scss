@@ -13,3 +13,13 @@ a.slides-link:visited {
   text-decoration: underline;
   font-family: "Georgia", serif;
 }
+
+.more-authors-static {
+  cursor: pointer;
+  border-bottom: 1px dashed #666;
+  padding-bottom: 1px;
+}
+
+.more-authors-static:hover {
+  opacity: 0.85;
+}
