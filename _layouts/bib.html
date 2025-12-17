@@ -78,7 +78,8 @@
         {%- endfor -%}
         {%- assign more_authors = author_array_size | minus: author_array_limit -%}
 
-        {%- assign more_authors_hide = more_authors | append: " more author" -%}
+        <!-- ### interactive to static -->
+        <!-- {%- assign more_authors_hide = more_authors | append: " more author" -%}
         {%- if more_authors > 0 -%}
           {%- if more_authors > 1 -%}
             {%- assign more_authors_hide = more_authors_hide | append: "s" -%}
@@ -107,6 +108,9 @@
               }, '{{site.more_authors_animation_delay}}');
               "
           >{{more_authors_hide}}</span>
+        {%- endif -%} -->
+        {%- if more_authors > 0 -%}
+          , and {{ more_authors }} others
         {%- endif -%}
 
         </div>
