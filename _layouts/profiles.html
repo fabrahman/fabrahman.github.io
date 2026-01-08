@@ -2,46 +2,175 @@
 layout: page
 ---
 
-<!-- about.html -->
-      <div class="post">
+<!-- profiles.html -->
+<div class="post">
+  <article>
+    {% if page.profiles -%}
 
-        <article>
-          {% if page.profiles -%}
-          {% for profile in page.profiles %}
-          <hr>
-          <div class="profile float-{%- if profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if profile.image %}
-              {%- assign profile_image_path = profile.image | prepend: 'assets/img/' -%}
+    <style>
+      .mentee-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
 
-              {% if profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+      .mentee-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        transition: background-color 0.2s ease;
+      }
+
+      .mentee-item:hover {
+        background-color: #e9ecef;
+      }
+
+      .mentee-thumbnail {
+        flex-shrink: 0;
+      }
+
+      .mentee-thumbnail img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+
+      .mentee-content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .mentee-name {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      .mentee-name a {
+        color: #2563eb;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .mentee-name a:hover {
+        color: #1d4ed8;
+        text-decoration: underline;
+      }
+
+      .mentee-info {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+
+      .mentee-year {
+        display: inline-block;
+        background-color: #2563eb;
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.875rem;
+        font-weight: 600;
+      }
+
+      .mentee-role {
+        color: #4b5563;
+        font-size: 1rem;
+      }
+
+      .mentee-details {
+        color: #6b7280;
+        font-size: 0.875rem;
+        line-height: 1.6;
+      }
+
+      .mentee-details p {
+        margin: 0.25rem 0;
+      }
+
+      .mentee-next {
+        margin-left: auto;
+        color: #16a34a;
+        font-weight: 500;
+        font-size: 0.95rem;
+        text-align: right;
+        align-self: center;
+      }
+
+      @media (max-width: 768px) {
+        .mentee-item {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .mentee-thumbnail img {
+          width: 80px;
+          height: 80px;
+        }
+
+        .mentee-next {
+          margin-left: 0;
+          text-align: center;
+        }
+      }
+    </style>
+
+    <div class="mentee-list">
+      {% for profile in page.profiles %}
+      <div class="mentee-item">
+        <div class="mentee-thumbnail">
+          {%- if profile.image %}
+            {%- assign profile_image_path = profile.image | prepend: 'assets/img/' -%}
+            <img src="{{ profile_image_path | relative_url }}" alt="{{ profile.image }}">
+          {% endif -%}
+        </div>
+
+        <div class="mentee-content">
+          <div class="mentee-info">
+            <h3 class="mentee-name">
+              {% if profile.website and profile.website != "" %}
+                <a href="{{ profile.website }}" target="_blank" rel="noopener noreferrer">{{ profile.name }}</a>
               {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+                {{ profile.name }}
               {% endif %}
-
-              {% include figure.html
-              path=profile_image_path
-              class=profile_image_class
-              alt=profile.image -%}
-            {% endif -%}
-            {%- if profile.more_info %}
-            <div class="more-info">
-              {{ profile.more_info }}
-            </div>
-            {%- endif %}
+            </h3>
           </div>
 
-          <div class="clearfix">
-            {% if profile.content -%}
-            {% capture profile_content %}{%- include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-            {%- else -%}
-            {{ content }}
-            {%- endif %}
+          <div class="mentee-info">
+            {% if profile.year %}
+              <span class="mentee-year">{{ profile.year }}</span>
+            {% endif %}
+            {% if profile.role %}
+              <span class="mentee-role">{{ profile.role }}</span>
+            {% endif %}
           </div>
 
-          {% endfor %}
+          {%- if profile.more_info %}
+          <div class="mentee-details">
+            {{ profile.more_info }}
+          </div>
           {%- endif %}
-        </article>
+        </div>
 
+        {% if profile.current_position %}
+        <div class="mentee-next">
+          → {{ profile.current_position }}
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    {%- endif %}
+  </article>
 </div>
