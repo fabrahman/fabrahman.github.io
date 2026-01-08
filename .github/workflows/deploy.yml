@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - main
+      - claude-code-mod
   pull_request:
     branches:
       - master

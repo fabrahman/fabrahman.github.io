@@ -42,7 +42,7 @@ layout: default
   <article class="post-content">
     {% if page.toc and page.toc.beginning %}
     <div id="table-of-contents">
-      {{ content | toc_only }}
+      {% toc %}
     </div>
     <hr>
     {% endif %}
@@ -52,13 +52,11 @@ layout: default
   </article>
 
   {%- if page.related_publications != null and page.related_publications.size > 0 -%}
-  {% comment %}
   {% assign publications = page.related_publications | replace: ", ", "," | split: "," | join: "|" %}
   <h2>References</h2>
   <div class="publications">
     {% bibliography -f {{ site.scholar.bibliography }} -q @*[key^={{ publications }}]* %}
   </div>
-  {% endcomment %}
   {%- endif %}
 
   {%- if site.related_blog_posts.enabled -%}
