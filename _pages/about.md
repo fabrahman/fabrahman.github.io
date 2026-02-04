@@ -34,9 +34,3 @@ I am currently a research scientist at [Allen Institute for AI](https://allenai.
 Previously, I interned at Microsoft Research, working on controllable grounded text generation; and at Ai2, working on unsupervised rationale generation for non-monotonic reasoning. My work has been featured in press by [GreekWire](https://www.geekwire.com/2024/ai2s-new-tulu-3-model-rivals-tech-giants-in-breakthrough-for-open-source-ai-post-training/) and [TechCrunch](https://techcrunch.com/2024/11/21/ai2s-open-source-tulu-3-lets-anyone-play-the-ai-post-training-game/?guccounter=1).
 
 Feel free to get in touch if you want to chat, collaborate or brainstorm!
-
-<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
