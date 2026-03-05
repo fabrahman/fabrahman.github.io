@@ -75,12 +75,12 @@
             {%- endif -%}
             {%- assign first_initial = author.first | slice: 0, 1 -%}
             {%- if author_is_self -%}
-            <i><span style="color: rgb(150, 87, 182);font-weight:400; font-size: 90%;">{{first_initial}}. {{author.last}}</span></i>
+            <span style="color: rgb(150, 87, 182);font-weight:400; font-size: 85%;">{{first_initial}}. {{author.last}}</span>
             {%- else -%}
               {%- if coauthor_url -%}
-              <i><a href="{{coauthor_url}}" style="font-size: 90%;">{{first_initial}}. {{author.last}}</a></i>
+              <a href="{{coauthor_url}}" style="font-size: 85%;">{{first_initial}}. {{author.last}}</a>
               {%- else -%}
-              <i style="font-size: 90%;">{{first_initial}}. {{author.last}}</i>
+              <span style="font-size: 85%;">{{first_initial}}. {{author.last}}</span>
               {%- endif -%}
             {%- endif -%}
           {%- endfor -%}
