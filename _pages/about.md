@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Research Scientist</a> Ai2
+subtitle: <a href='#'>Senior Research Scientist |</a> Ai2
 # subtitle: <a href='#'>Postdoctoral Researcher</a>. AI2|UW
 
 profile:
