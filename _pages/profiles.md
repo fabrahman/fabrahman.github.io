@@ -9,6 +9,37 @@ nav_order: 6
 profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
+  - name: Yike Wang
+    image: yike.png
+    image_circular: true
+    year: 2025-2026
+    role: PhD student at UW
+    website: https://yikee.github.io
+    more_info: >
+      <p>05/2025 - present
+    current_position:
+
+  - name: Tong Chen
+    image: tong.jpeg
+    image_circular: true
+    year: 2025-2026
+    role: PhD student at UW
+    website: https://chentong0.github.io
+    more_info: >
+      <p>01/2025 - present
+    current_position:
+
+  - name: Afra Amini
+    image: afra.webp
+    image_circular: true
+    year: 2025
+    role: PhD student at ETH
+    website: https://afraamini.github.io
+    more_info: >
+      <p>Co-mentor: Valentina Pyatkin</p>
+      <p>04/2025 - 07/2025</p>
+    current_position: Google DeepMind
+
   - name: Keivan Rezaei
     image: keivan.png
     image_circular: true
@@ -17,7 +48,7 @@ profiles:
     website: https://k1rezaei.github.io
     more_info: >
       <p>Co-mentor: Abhilasha Ravichander</p>
-      <p>06/2024 - present</p>
+      <p>06/2024 - 10/2024</p>
     current_position:
 
   - name: Xuhui Zhou
@@ -60,8 +91,8 @@ profiles:
     role: Master student at UW
     website:
     more_info: >
-      <p>11/2022 - present</p>
-    current_position:
+      <p>11/2022 - 05/2023</p>
+    current_position: PhD @ USC
 
   - name: Kavel Rao
     image: kavel.jpg
@@ -83,7 +114,7 @@ profiles:
     more_info: >
       <p>Co-mentor: Swabha Swayamdipta</p>
       <p>05/2022 - 12/2022</p>
-    current_position:
+    current_position: Assisant Professor @ Rice University
 
   - name: Tenghao Huang
     image: tenghao.jpg
@@ -94,7 +125,7 @@ profiles:
     more_info: >
       <p>Co-mentor: Snigdha Chaturvedi</p>
       <p>01/2021 - 05/2022</p>
-    current_position:
+    current_position: PhD @ USC
 
   - name: Meng Huang
     image: meng.jpeg
