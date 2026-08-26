@@ -9,6 +9,16 @@ nav_order: 6
 profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
+  - name: Malia Morgan
+    image:
+    image_circular: true
+    year: 2025-Present
+    role: Predoctoral Young Investigator at Ai2
+    website: https://www.linkedin.com/in/malia-morgan-b5a8b0338/
+    more_info: >
+      <p>Co-mentor: Maarten Sap</p>
+    current_position:
+
   - name: Yike Wang
     image: yike.png
     image_circular: true
